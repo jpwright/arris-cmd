@@ -33,8 +33,13 @@ def login():
 		get_response = requests.get(url='http://10.0.0.1')
 		post_data = {'username': username, 'password': password}
 		post_response = requests.post(url='http://10.0.0.1/home_loggedout.php', data=post_data)
+		br.open('http://10.0.0.1')
+		data = br.response()
+		soup = BeautifulSoup(data)
+		if 'Please login' in soup.text:
+			print 'warning: login rejected by router!'
 	else:
-		print 'warning: login failed. make sure your login.txt is correct'
+		print 'warning: not attempting to log in, make sure your login.txt is correct'
 
 def connected_devices():
 	br.open('http://10.0.0.1')
