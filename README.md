@@ -11,7 +11,9 @@ This script is intended for the following (personal) use cases:
 
 How to use:
 
-First, modify login.txt. Put your username (usually 'admin') on the first line, and password on the second.
+First, install dependencies (if you don't already have them) -- `pip install beautifulsoup4 mechanize`
+
+Second, modify login.txt. Put your username (usually 'admin') on the first line, and password on the second.
 
 Then run the script with one of the following options (more to come):
 
