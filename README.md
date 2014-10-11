@@ -1,7 +1,7 @@
 arris-cmd
 =========
 
-Command line tools for configuring an Arris TG862 gateway.
+Command line tools for configuring an Arris TG862 gateway. This is designed for, and only tested on, an Ubuntu 14.04.1 machine.
 
 This script is intended for the following (personal) use cases:
 
@@ -20,3 +20,5 @@ Then run the script with one of the following options (more to come):
 `arris.py devices` -- list devices currently connected. Note: This doesn't expose their local IPs just yet.  
 `arris.py ports` -- show current port forwarding settings.  
 `arris.py ports-update` -- update port forwarding settings to forward ports 22, 80, and 690 to the computer's local IP. These are the ports I happen to use, you'll need to modify the script a bit for your own purposes, eventually I will update this to use a settings file as well.  
+
+*Important* -- When updating ports, the script will use the local IP of the computer running the script by checking eth0, eth1, and eth2 -- and using the IP of the first interface that works. If your network interfaces are called something different, or you don't want that behavior, you'll need to modify the script to suit your preferences.
