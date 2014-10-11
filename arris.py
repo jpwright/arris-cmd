@@ -25,8 +25,8 @@ br.set_handle_referer(True)
 br.set_handle_robots(False)
 
 def login():
-	if (os.path.isfile('login.txt')):
-		with open('login.txt') as login:
+	if (os.path.isfile(os.path.abspath('login.txt'))):
+		with open(os.path.abspath('login.txt')) as login:
 			lines = login.readlines()
 		username = lines[0].strip()
 		password = lines[1].strip()
