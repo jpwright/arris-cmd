@@ -15,6 +15,6 @@ First, modify login.txt. Put your username (usually 'admin') on the first line, 
 
 Then run the script with one of the following options (more to come):
 
-`arris.py devices` -- list devices currently connected. Note: This doesn't expose their local IPs just yet.
-`arris.py ports` -- show current port forwarding settings.
-`arris.py ports-update` -- update port forwarding settings to forward ports 22, 80, and 690 to the computer's local IP. These are the ports I happen to use, you'll need to modify the script a bit for your own purposes, eventually I will update this to use a settings file as well.
+`arris.py devices` -- list devices currently connected. Note: This doesn't expose their local IPs just yet.  
+`arris.py ports` -- show current port forwarding settings.  
+`arris.py ports-update` -- update port forwarding settings to forward ports 22, 80, and 690 to the computer's local IP. These are the ports I happen to use, you'll need to modify the script a bit for your own purposes, eventually I will update this to use a settings file as well.  
